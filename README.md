@@ -15,6 +15,11 @@
 <!--- specific language governing permissions and limitations -->
 <!--- under the License. -->
 
+### This is part of the python implementation of the paper "Local AdaAlter: Communication-Efficient Stochastic Gradient Descent with Adaptive Learning Rates", by anonymous authors.
+
+This repository is a modified version of MXNet
+-----------------
+
 <div align="center">
   <a href="https://mxnet.incubator.apache.org/"><img src="https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/image/mxnet_logo_2.png"></a><br>
 </div>
