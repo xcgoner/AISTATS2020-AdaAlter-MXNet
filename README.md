@@ -20,6 +20,31 @@
 This repository is a modified version of MXNet
 -----------------
 
+The following files are modified for the implementation of AdaAlter optimizer:
+  * src/operator/optimizer_op-inl.h
+  * src/operator/optimizer_op.cc
+  * src/operator/optimizer_op.cu
+
+Since anonymous.4open.science does not support downloading the entire project as a zip package, to reproduce the experiments, please install this modified MXNet by following the instructions below:
+
+  1. Fetch the latest public version of MXNet ```git clone https://github.com/apache/incubator-mxnet.git --recursive```
+  2. Replace the 3 files above by the ones of this repository
+  3. Compile the moidified MXNet via the official instructions: https://mxnet.apache.org/get_started/build_from_source
+  4. After compilation, install the python packages:
+  https://mxnet.apache.org/get_started/ubuntu_setup.html
+  or simply
+  ```
+  cd python
+  pip3 install -e .
+  ```
+
+**Note:** The instructions above can be successfully executed in most cases, but may not provide the optimal performance of MXNet. To achieve better performance, please use the makefile in (but the compilation may fail due to some missing dependencies):
+https://anonymous.4open.science/repository/98ffe838-0495-41e2-a85b-dde2594e2c80/make/pip/
+
+
+-----------------
+
+
 <div align="center">
   <a href="https://mxnet.incubator.apache.org/"><img src="https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/image/mxnet_logo_2.png"></a><br>
 </div>
